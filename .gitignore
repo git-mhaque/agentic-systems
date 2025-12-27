@@ -8,7 +8,7 @@ __pycache__/
 
 # Environment variable and secrets
 .env
-.env.*
+.env.
 
 # Virtual Environments
 venv/
