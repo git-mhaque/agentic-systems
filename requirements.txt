@@ -1,0 +1,8 @@
+langchain-community
+langchain-openai
+openai
+python-dotenv
+urllib3<2.0
+langgraph
+grandalf
+langchain-core

@@ -1,0 +1,21 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Editor & OS files
+.vscode/
+.DS_Store
+
+# Environment variable and secrets
+.env
+.env.*
+
+# Virtual Environments
+venv/
+*/venv/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# System-specific folders
+systems/*/venv/
