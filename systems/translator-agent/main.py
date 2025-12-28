@@ -6,14 +6,11 @@ def main():
     agent = build_agent()
     print(agent.get_graph().draw_ascii())
 
-    prompt = "Translate the following English text to French: 'Welcome! How are you today?'"
-    input = {"messages": [HumanMessage(prompt)]}
-    for chunk in agent.stream(input):
-        print(chunk)
+    user_query = "Welcome!"
+    print("User query:", user_query)
 
-    prompt = "Translate the following English text to French: 'Have a great day!'"
-    state = agent.invoke({"messages": prompt})
-    print("AI Agent says:", state)
-
+    state = agent.invoke({"user_query": user_query})
+    print("Translated output:", state["output_query"])
+    
 if __name__ == "__main__":
     main()
