@@ -1,4 +1,4 @@
-from agent import build_agent
+from .agent import build_agent
 from langchain_core.messages import HumanMessage
 
 def main():

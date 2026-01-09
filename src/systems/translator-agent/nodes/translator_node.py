@@ -1,7 +1,7 @@
-from config import Config
+from ..config import Config
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from agent_state import AgentState
+from ..agent_state import AgentState
 
 def translator_node(state:AgentState) -> AgentState:
     config = Config()    

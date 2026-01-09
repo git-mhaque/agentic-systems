@@ -45,6 +45,18 @@ cp .env.example .env
 
 ### Running an agentic system
 
+### Running an agentic system
+From `src` directory
 ```sh
-python ./systems/translator-agent/main.py
+python -m systems.restaurant-finder-agent.main
+```
+
+```sh
+python -m systems.translator-agent.main
+```
+
+### Running tests
+From `src` directory
+```sh
+python -m tools.test_tavily_web_search
 ```
