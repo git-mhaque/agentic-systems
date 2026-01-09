@@ -1,8 +1,8 @@
 from langgraph.graph import StateGraph, START, END
-from .nodes.finder_node import finder_node
-from .agent_state import AgentState
 from langgraph.prebuilt import ToolNode, tools_condition
 from tools.tavily_web_search import tavily_web_search
+from .nodes.finder_node import finder_node
+from .agent_state import AgentState
 
 def build_agent():
     graph = StateGraph(AgentState)

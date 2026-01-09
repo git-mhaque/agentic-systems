@@ -1,9 +1,8 @@
-from ..config import Config
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
-from ..agent_state import AgentState
-
 from tools.tavily_web_search import tavily_web_search
+from ..config import Config
+from ..agent_state import AgentState
 
 def finder_node(state:AgentState) -> AgentState:
     config = Config()    
@@ -11,7 +10,7 @@ def finder_node(state:AgentState) -> AgentState:
     model = ChatOpenAI(
         openai_api_key=config.openai_api_key,
         model=config.openai_model_name,
-        temperature=0.9,
+        temperature=0.0,
         max_tokens=1000
     )
 

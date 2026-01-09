@@ -1,6 +1,6 @@
-from ..config import Config
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
+from ..config import Config
 from ..agent_state import AgentState
 
 def translator_node(state:AgentState) -> AgentState:
